@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Evaluación - Electiva II</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de evento (fecha, departamento, municipio)</h1>
+
+    <form id="registroForm">
+      <label>Fecha:
+        <input type="date" id="fecha" name="fecha" required />
+      </label>
+
+      <label>Departamento:
+        <select id="departamento" required>
+          <option value="">-- Seleccione departamento --</option>
+        </select>
+      </label>
+
+      <label>Municipio:
+        <select id="municipio" required>
+          <option value="">-- Seleccione municipio --</option>
+        </select>
+      </label>
+
+      <button type="submit">Guardar registro</button>
+    </form>
+
+    <section class="filters">
+      <h2>Registros guardados</h2>
+      <div class="filter-row">
+        <select id="filterDepartamento">
+          <option value="">Todos los departamentos</option>
+        </select>
+        <select id="filterMunicipio">
+          <option value="">Todos los municipios</option>
+        </select>
+        <button id="applyFilter">Aplicar filtro</button>
+        <button id="clearFilter">Limpiar filtros</button>
+      </div>
+      <div id="recordsContainer"></div>
+    </section>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

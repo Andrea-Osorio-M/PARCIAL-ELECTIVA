@@ -1,0 +1,20 @@
+{
+  "name": "evaluacion-electivaii",
+  "version": "1.0.0",
+  "description": "Proyecto para la evaluación de Electiva II - Gestión de objeto con fecha, departamento y municipio",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
